@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title> Predicting African Startup Deal Size </title>
+      <!-- <div id=“logo”>
+        <img src= “https://www.icnl.org/wp-content/uploads/African-Union-circle-flag-1.svg”>
+      </div> -->
+      <h1> Predicting African Startup Deal Size </h1>
+  </head>
+   <body>
+      <form action = "http://localhost:4000/result" method = "POST">
+          <label for="country_hq">Country HQ:</label> <br>
+            <select id="country_hq" name="country_hq" size="3"> 
+              <option value="Nigeria">Nigeria</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Egypt">Egypt</option>
+              <option value="South Africa">South Africa</option> 
+            </select> <br><br>
+          <label for="sector">Sector:</label> <br>
+            <select id="sector" name="sector" size="3"> 
+              <option value="Fintech">Fintech</option>
+              <option value="Logistics & Transport">Logistics & Transport</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Agriculture & Food">Agriculture & Food</option>
+            </select> <br><br>
+          <label for="continent">On which continent did the CEO attend university?</label> <br>
+            <select id="continent" name="continent" size="3"> 
+              <option value="Africa">Africa</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+            </select> <br><br>
+          <p>Years between graduation and startup launch:<br>
+              <input type ="int" name = "launch" />
+          </p> <br>
+          <label for="woman_ceo">Female CEO:</label> <br>
+            <select id="woman_ceo" name="woman_ceo" size="2">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select> <br><br>
+          <label for="gender_mix">Gender mix of founders:</label> <br>
+            <select id="gender_mix" name="gender_mix" size="3">
+              <option value="Male-only founding team">Male-only founding team</option>
+              <option value="Female-only founding team">Female-only founding team</option>
+              <option value="Gender-diverse founding team">Gender-diverse founding team</option>
+            </select> <br><br>
+          <label for="round_type">Funding Type:</label> <br>
+            <select id="round_type" name="round_type" size="3">
+              <option value="Pre-Seed">Pre-Seed</option>
+              <option value="Seed">Seed</option>
+              <option value="Venture Round">Venture Round</option>
+              <option value="Grant">Grant</option>
+              <option value="Debt">Debt</option>
+            </select> <br><br>
+         <p># of Founders:<br>
+              <input type ="int" name = "founders" />
+          </p> <br>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
